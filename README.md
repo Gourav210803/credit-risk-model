@@ -68,3 +68,13 @@ shadowscore/
    cd shadowscore
 
 
+2.Install dependencies
+pip install -r requirements.txt
+
+3. Run Streamlit app
+streamlit run streamlit_app/app.py
+
+4. Run FastAPI backend (optional)
+uvicorn app.api:app --reload
+5. Start PostgreSQL
+Configure your credentials in .env and run database migrations (if needed).
